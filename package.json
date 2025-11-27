@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://santiago290.github.io/pruebaNotaria",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

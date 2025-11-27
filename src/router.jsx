@@ -8,6 +8,9 @@ const router = createBrowserRouter(
       element: <Home />,
     },
   ],
+    {
+    basename: "/pruebaNotaria",
+    }
 );
 
 export default router;

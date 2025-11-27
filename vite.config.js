@@ -8,4 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  base:"https://santiago290.github.io/pruebaNotaria"
 })
