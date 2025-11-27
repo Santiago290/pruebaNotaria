@@ -7,16 +7,12 @@ export default function NotaryHeader() {
 
   return (
     <>
-      {/* NAV */}
-      <nav className="fixed top-0 left-0 w-full h-[120px] bg-gradient-notaria z-50 flex items-center px-6 shadow-lg">
+      <nav className="fixed top-0 left-0 w-full h-[150px] bg-gradient-notaria z-50 flex items-center px-6">
         <div className="screen m-auto flex items-center justify-between h-full">
-
-          {/* LOGO (más pequeño) */}
           <Link to="/" className="flex items-center">
-            <LogoSvg width="180" height="100%" />
+            <LogoSvg width="260" height="100%" />
           </Link>
 
-          {/* OPCIONES PC */}
           <div className="hidden md:flex items-center gap-10">
             <Link className="text-white text-[17px] font-light hover:text-amber-400 transition">La Notaría</Link>
             <Link className="text-white text-[17px] font-light hover:text-amber-400 transition">Servicios</Link>
@@ -27,7 +23,6 @@ export default function NotaryHeader() {
             </button>
           </div>
 
-          {/* HAMBURGUESA MOBILE */}
           <button
             onClick={() => setIsOpen(true)}
             className="md:hidden p-2 text-white text-3xl"
@@ -37,10 +32,8 @@ export default function NotaryHeader() {
         </div>
       </nav>
 
-      {/* ESPACIADOR */}
-      <div className="h-[120px]"></div>
+      <div className="h-[150px]"></div>
 
-      {/* MENÚ MOBILE → fuera de pantalla y animado */}
       <div
         className={`
           fixed top-0 right-0 w-[70%] h-full bg-gradient-notaria z-[60] p-6
