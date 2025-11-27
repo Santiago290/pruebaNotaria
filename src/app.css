@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-xs: 360px;   
+  --breakpoint-sm: 480px;  
+  --breakpoint-md: 768px;   
+  --breakpoint-lg: 1024px; 
+  --breakpoint-xl: 1280px;   
+  --breakpoint-2xl: 1536px;  
+  --breakpoint-3xl: 1800px;  
+  --breakpoint-4xl: 2100px; 
+
+  --color-rojo: #7c0600;
+  --color-dorado: #fab937;
+  --color-beige: #ffead9;
+  --color-gris: #dbdbdb;
+  --color-negro: #212121;
+
+  --gradient-notaria: linear-gradient(135deg, #7c0600, #170100);
+
+  --font-sans: "Inter", sans-serif;
+  --font-choplin: "Choplin", sans-serif;
+}
+
+@utility bg-gradient-notaria {
+  background: var(--gradient-notaria);
+}
+
+@utility screen {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1160px;
+  width: 100%;
+  text-align: center;
+}
+
+@utility btn {
+  padding: 8px 23px;
+  border: solid 1px;
+  border-radius: 100px;
+}
+
+@utility title{
+  color: var(--color-rojo);
+  font-size: 51px;
+  font-family: var(--font-choplin);
+  font-weight: 600;
+}
+
+
+@font-face {
+  font-family: "Choplin";
+  src: url("/src/assets/fonts/Choplin-Extralight.ttf") format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Choplin";
+  src: url("/src/assets/fonts/Choplin-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Choplin";
+  src: url("/src/assets/fonts/Choplin-Book.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Choplin";
+  src: url("/src/assets/fonts/Choplin-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Choplin";
+  src: url("/src/assets/fonts/Choplin-Semibold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Choplin";
+  src: url("/src/assets/fonts/Choplin-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Choplin";
+  src: url("/src/assets/fonts/Choplin-Thin.ttf") format("truetype");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Choplin";
+  src: url("/src/assets/fonts/Choplin-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+
+html {
+  font-family: var(--font-sans);
+}
