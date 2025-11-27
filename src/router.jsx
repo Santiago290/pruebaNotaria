@@ -1,4 +1,4 @@
-import { createHashRouter } from "react-router-dom";
+import { createBrowserRouter, createHashRouter } from "react-router-dom";
 import { Home } from "./pages/Home";
 
 const router = createBrowserRouter(
@@ -8,9 +8,6 @@ const router = createBrowserRouter(
       element: <Home />,
     },
   ],
-  {
-    basename: "/pruebaNotaria",
-  }
 );
 
 export default router;
