@@ -1,11 +1,16 @@
 import { createHashRouter } from "react-router-dom";
 import { Home } from "./pages/Home";
 
-const router = createHashRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <Home />,
+    },
+  ],
   {
-    path: "/",
-    element: <Home />,
+    basename: "/pruebaNotaria",
   }
-]);
+);
 
 export default router;
