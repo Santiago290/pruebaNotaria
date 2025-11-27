@@ -1,4 +1,5 @@
 import React from 'react'
+import imgNotaria from '../../assets/img/imgNotaria.jpg';
 
 const Hero = () => {
   return (
@@ -6,8 +7,7 @@ const Hero = () => {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-        backgroundImage:
-            "url('./src/assets/img/imgNotaria.jpg')",
+          backgroundImage: `url(${imgNotaria})`,
         }}
       />
       <div className="absolute inset-0 bg-linear-to-r from-black/60 to-black/40" />
