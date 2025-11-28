@@ -1,6 +1,6 @@
 import React from "react";
 
-const LogoSvg = ({ colorPrimary = "#FAB937", colorSecondary = "#FFFFFF", width="300", height="300", ...props }) => (
+const LogoSvg = ({ colorPrimary = "#FAB937", colorSecondary = "#FFFFFF", width=100, height=100, ...props }) => (
   <svg
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"

@@ -13,7 +13,7 @@ export const Home = () => {
         <FloatingVentana />
 
       <Navbar></Navbar>
-      <Hero></Hero>
+      <Hero></Hero> 
       <Services></Services>
       <Location></Location>
       <Cita></Cita>

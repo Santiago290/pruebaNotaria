@@ -29,29 +29,31 @@ const service = [
   { imagen: divorcio, title: "Divorcios", desc: "Ver info" },
   { imagen: matrimonio, title: "Matrimonio", desc: "Ver info" },
   { imagen: rectificacion, title: "Rectificación de partidas", desc: "Ver info" },
-  { imagen: sucesion, title: "Sucesión intestada", desc: "Ver info" },
+  { imagen: sucesion, title: "Sucesión\nintestada", desc: "Ver info" },
   { imagen: testamento, title: "Testamento", desc: "Ver info" },
   { imagen: otros, title: "Otros servicios notariales", desc: "Ver info" },
 ]
 
 const Services = () => {
   return (
-    <div className='screen py-28'>
-      <div className='mb-18 leading-12'>
-        <div className='title'>¿Qué trámites deseas realizar hoy?</div>
-        <div className='font-choplin font-light text-[28px] text-negro'>Conoce todos los productos que tenemos para tí</div>
-      </div>
-      <div className='flex gap-10 flex-wrap justify-center '>
-        {service.map((serviceItem, index) => (
-          <Cards
-            key={index}
-            img={serviceItem.imagen}
-            titulo={serviceItem.title}
-            desc={serviceItem.desc}
-          />
-        ))}
+    <div className="screen py-5 smd:py-20 md:py-28">
+    <div className="mb-8 sm:mb-16 md:mb-18 text-center">
+      <div className="title text-[21px] sm:text-3xl md:text-4xl leading-none">
+        ¿Qué trámites deseas <br /> realizar hoy?
       </div>
 
+      <div className="font-choplin mx-5 md:m-0 font-light text-[15px] sm:text-2xl md:text-[28px] text-negro mt-2 sm:mt-3 md:mt-4 leading-snug sm:leading-tight md:leading-snug">
+        Conoce todos los productos que tenemos para tí
+      </div>
+    </div>
+
+      <div className="flex flex-wrap gap-3 m-4 md:m-0 sm:gap-3 md:gap-10 justify-center">
+        {service.map((serviceItem, index) => (
+          <div key={index} className="w-[calc(50%-6px)] flex justify-center items-center sm:w-[calc(50%-12px)] md:w-[240px]">
+            <Cards img={serviceItem.imagen} titulo={serviceItem.title} desc={serviceItem.desc} />
+          </div>
+        ))}
+      </div>
     </div>
   )
 }

@@ -7,13 +7,13 @@ export default function NotaryHeader() {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full h-[150px] bg-gradient-notaria z-50 flex items-center px-6">
+      <nav className="fixed top-0 left-0 w-full h-[120px] md:h-[150px] bg-gradient-notaria z-50 flex items-center px-6">
         <div className="screen m-auto flex items-center justify-between h-full">
-          <Link to="/" className="flex items-center">
-            <LogoSvg width="260" height="100%" />
+          <Link to="/" className="flex items-center mx-auto">
+            <LogoSvg width="170" />
           </Link>
-
-          <div className="hidden md:flex items-center gap-10">
+          <button onClick={() => setIsOpen(true)} className="lg:hidden absolute right-6 p-2 text-white text-xl">☰</button>
+          <div className="hidden lg:flex items-center gap-10">
             <Link className="text-white text-[17px] font-light hover:text-amber-400 transition">La Notaría</Link>
             <Link className="text-white text-[17px] font-light hover:text-amber-400 transition">Servicios</Link>
             <Link className="text-white text-[17px] font-light hover:text-amber-400 transition">Consultas en Línea</Link>
@@ -23,55 +23,25 @@ export default function NotaryHeader() {
             </button>
           </div>
 
-          <button
-            onClick={() => setIsOpen(true)}
-            className="md:hidden p-2 text-white text-3xl"
-          >
-            ☰
-          </button>
+          
         </div>
       </nav>
 
-      <div className="h-[150px]"></div>
+      <div className="h-[120px] md:h-[150px]"></div>
 
-      <div
-        className={`
-          fixed top-0 right-0 w-[70%] h-full bg-gradient-notaria z-[60] p-6
-          transition-transform duration-300
-          ${isOpen ? "translate-x-0" : "translate-x-full"}
-        `}
-      >
-        {/* BOTÓN CERRAR */}
-        <button
-          onClick={() => setIsOpen(false)}
-          className="text-white text-3xl absolute top-6 right-6"
-        >
-          ✕
-        </button>
+      <div className={` fixed top-0 right-0 w-[70%] h-full bg-gradient-notaria z-[60] p-6 transition-transform duration-300 ${isOpen ? "translate-x-0" : "translate-x-full"}`}>
+        <button onClick={() => setIsOpen(false)} className="text-white text-3xl absolute top-6 right-6" >✕</button>
 
-        {/* OPCIONES */}
         <div className="mt-16 space-y-4">
-          <Link
-            to="/notaria"
-            onClick={() => setIsOpen(false)}
-            className="block text-white text-lg py-3 border-b border-white/20"
-          >
+          <Link to="/notaria" onClick={() => setIsOpen(false)}className="block text-white text-lg py-3 border-b border-white/20">
             La Notaría
           </Link>
 
-          <Link
-            to="/servicios"
-            onClick={() => setIsOpen(false)}
-            className="block text-white text-lg py-3 border-b border-white/20"
-          >
+          <Link to="/servicios" onClick={() => setIsOpen(false)} className="block text-white text-lg py-3 border-b border-white/20">
             Servicios
           </Link>
 
-          <Link
-            to="/consultas"
-            onClick={() => setIsOpen(false)}
-            className="block text-white text-lg py-3 border-b border-white/20"
-          >
+          <Link to="/consultas" onClick={() => setIsOpen(false)} className="block text-white text-lg py-3 border-b border-white/20">
             Consultas en Línea
           </Link>
 

@@ -3,9 +3,10 @@
 @theme {
   --breakpoint-xs: 360px;   
   --breakpoint-sm: 480px;  
+  --breakpoint-smd:600px;  
   --breakpoint-md: 768px;   
   --breakpoint-lg: 1024px; 
-  --breakpoint-xl: 1280px;   
+  --breakpoint-xl: 1200px;   
   --breakpoint-2xl: 1536px;  
   --breakpoint-3xl: 1800px;  
   --breakpoint-4xl: 2100px; 
@@ -29,7 +30,7 @@
 @utility screen {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1160px;
+  max-width: 1170px;
   width: 100%;
   text-align: center;
 }
