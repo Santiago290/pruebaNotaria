@@ -51,30 +51,16 @@ export default function FloatingVentana() {
               title="Ubicación en Google Maps"/>
           </div>
 
-          <div className="mx-[84px] text-center max-lg:mx-10 max-sm:mx-4 max-xs:mx-2 ">
-            <span
-              className="
-                font-semibold font-choplin text-rojo 
-                text-[100px]
-                max-lg:text-[80px]
-                max-md:text-[70px]
-                max-sm:text-[55px]
-                max-xs:text-[42px]
-              "
-            >
+          <div className="text-center lg:mx-10 sm:mx-4 xs:mx-2 ">
+            <span className=" font-semibold font-choplin text-rojo text-[45px] sm:text-[55px] lg:text-[80px] md:text-[70px]  leading-10  ">
               ¡Nos mudamos!
             </span>
 
-            <p className="
-              text-[20px]
-              max-md:text-[18px]
-              max-sm:text-[16px]
-              max-xs:text-[14px]
-            ">
+            <p className="text-[20px] md:text-[26px] my-[12px]">
+              Nos trasladamos a <span className="font-bold"><br /> Av. César Vallejo 290 - Lince.</span>
+              <br className="sm:hidden" />
               Ahora estamos en nueva oficina, nuevo espacio, mayor comodidad
               para nuestro equipo y un mejor servicio para nuestros clientes.
-              <br className="max-sm:hidden" />
-              Nos trasladamos a <span className="font-bold">Av. César Vallejo 290 - Lince.</span>
             </p>
           </div>
 

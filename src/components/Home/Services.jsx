@@ -43,7 +43,7 @@ const Services = () => {
       </div>
 
       <div className="font-choplin mx-5 md:m-0 font-light text-[15px] sm:text-2xl md:text-[28px] text-negro mt-2 sm:mt-3 md:mt-4 leading-snug sm:leading-tight md:leading-snug">
-        Conoce todos los productos que tenemos para tí
+        Conoce todos los productos que <br className="block md:hidden" /> tenemos para tí
       </div>
     </div>
 
