@@ -14,7 +14,7 @@ export default function FloatingVentana() {
 
   return (
     <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-200 p-4">
-      <div className="bg-white dark:bg-slate-900 rounded-4xl shadow-2xl max-w-[1000px] w-full min-h-[580px]overflow-y-auto max-sm:min-h-[520px] max-xs:min-h-[480px] ">
+      <div className="bg-white rounded-4xl shadow-2xl max-w-[1000px] w-full min-h-[580px]overflow-y-auto max-sm:min-h-[520px] max-xs:min-h-[480px] ">
         <div className="p-6 space-y-4 max-xs:p-3">
           <div className=" w-full h-[290px] rounded-t-4xl overflow-hidden relative max-sm:h-[240px] max-xs:h-[200px]">
 
