@@ -9,7 +9,7 @@ export default function NotaryHeader() {
     <>
       <nav className="fixed top-0 left-0 w-full h-[120px] md:h-[150px] bg-gradient-notaria z-50 flex items-center px-6">
         <div className="screen m-auto flex items-center justify-between h-full">
-          <Link to="/" className="flex items-center mx-auto">
+          <Link to="/" className="flex items-center mx-0 lg:mx-auto">
             <LogoSvg width="170" />
           </Link>
           <button onClick={() => setIsOpen(true)} className="lg:hidden absolute right-6 p-2 text-white text-xl">☰</button>
